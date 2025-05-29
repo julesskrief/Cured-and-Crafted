@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Cured and Crafted</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Inter&display=swap" rel="stylesheet">
+<style>
+:root {
+--bg: #fdfaf6;
+--accent: #d4bfa3;
+--text: #333;
+}
+
+body {
+margin: 0;
+font-family: 'Inter', sans-serif;
+background-color: var(--bg);
+color: var(--text);
+}
+
+header {
+background-color: var(--bg);
+padding: 1.5rem;
+text-align: center;
+border-bottom: 1px solid #ddd;
+}
+
+header h1 {
+font-family: 'Playfair Display', serif;
+font-size: 2.5rem;
+margin: 0;
+}
+
+nav {
+display: flex;
+justify-content: center;
+gap: 1.5rem;
+margin-top: 1rem;
+}
+
+nav a {
+text-decoration: none;
+color: var(--text);
+font-weight: bold;
+}
+
+.hero {
+padding: 4rem 2rem;
+text-align: center;
+}
+
+.hero img {
+max-width: 100%;
+border-radius: 1rem;
+box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.hero h2 {
+font-family: 'Playfair Display', serif;
+margin-top: 2rem;
+font-size: 2rem;
+}
+
+.section {
+padding: 4rem 2rem;
+max-width: 900px;
+margin: auto;
+}
+
+.gallery {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+gap: 1.5rem;
+}
+
+.gallery img {
+width: 100%;
+border-radius: 1rem;
+box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+form {
+display: grid;
+gap: 1rem;
+max-width: 500px;
+margin: auto;
+}
+
+input, textarea, select {
+padding: 0.8rem;
+border: 1px solid #ccc;
+border-radius: 0.5rem;
+}
+
+button {
+padding: 0.8rem;
+background-color: var(--accent);
+border: none;
+border-radius: 0.5rem;
+color: white;
+font-weight: bold;
+cursor: pointer;
+}
+
+footer {
+text-align: center;
+padding: 2rem;
+font-size: 0.9rem;
+color: #666;
+}
+</style>
+</head>
+<body>
+<header>
+<h1>Cured and Crafted</h1>
+<nav>
+<a href="#gallery">Gallery</a>
+<a href="#order">Order</a>
+<a href="#customize">Customize</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<section class="hero">
+<img src="https://via.placeholder.com/900x400?text=Charcuterie+Board" alt="Charcuterie Board" />
+<h2>Elegant, Handcrafted Charcuterie Boards in Fair Haven, NJ</h2>
+</section>
+
+<section class="section" id="gallery">
+<h2>Gallery</h2>
+<div class="gallery">
+<img src="https://via.placeholder.com/400x300?text=Board+1" alt="Board 1" />
+<img src="https://via.placeholder.com/400x300?text=Board+2" alt="Board 2" />
+<img src="https://via.placeholder.com/400x300?text=Board+3" alt="Board 3" />
+</div>
+</section>
+
+<section class="section" id="order">
+<h2>Place an Order</h2>
+<form>
+<input type="text" name="name" placeholder="Your Name" required />
+<input type="email" name="email" placeholder="Your Email" required />
+<textarea name="details" rows="5" placeholder="Tell us what kind of board you’d like, when you need it, and any preferences."></textarea>
+<button type="submit">Submit</button>
+</form>
+</section>
+
+<section class="section" id="customize">
+<h2>Customize Your Board</h2>
+<form>
+<label for="size">Choose a size:</label>
+<select name="size" id="size" required>
+<option value="">Select size</option>
+<option value="small">Small (1-2 people)</option>
+<option value="medium">Medium (3-5 people)</option>
+<option value="large">Large (6+ people)</option>
+</select>
+
+<label for="items">Choose items to include:</label>
+<select name="items" id="items" multiple size="5">
+<option value="cheese">Assorted Cheeses</option>
+<option value="meats">Cured Meats</option>
+<option value="fruit">Fresh Fruit</option>
+<option value="nuts">Nuts</option>
+<option value="crackers">Crackers & Bread</option>
+<option value="sweets">Sweets & Chocolates</option>
+</select>
+
+<textarea name="notes" rows="4" placeholder="Any dietary restrictions or special requests?"></textarea>
+<button type="submit">Submit Customization</button>
+</form>
+</section>
+
+<section class="section" id="contact">
+<h2>Contact</h2>
+<p>Email: <a href="mailto:your@email.com">your@email.com</a></p>
+<p>Located in Fair Haven, New Jersey</p>
+</section>
+
+<footer>
+&copy; 2025 Cured and Crafted. All rights reserved.
+</footer>
+</body>
+</html>
